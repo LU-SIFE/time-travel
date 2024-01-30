@@ -1,0 +1,44 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Available Fonts */
+/* font-family: "Permanent Marker", cursive; */
+/* font-family: "Roboto Slab", serif; */
+
+body {
+    min-height: 150vh;
+    overflow-x: hidden;
+}
+
+body {-ms-overflow-style: none;}          /* IE and Edge */
+body {scrollbar-width: none;}             /* Firefox     */
+body::-webkit-scrollbar {display: none;}  /* Chrome      */
+
+.buffer {
+    height: 1em;
+    background-color: #0f0f0f;
+}
+
+section {
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+
+}
+
+.section1 {background-image: url("imgs/landscape.jpg");}
+.section2 {background-image: url("imgs/landscape2.jpg");}
+
+.hero_text, .sect2_content {
+    font-family: "Roboto Slab", serif;
+    margin: auto;
+    padding: 40px 60px 40px 60px;
+    font-size: 60px;
+    color: #dfdfdf;
+    background-color: rgba(0,0,0,0.4);
+    border-radius: 10px;
+}
