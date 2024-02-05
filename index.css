@@ -1,7 +1,7 @@
 html, body {
     margin: 0;
     padding: 0;
-    background-color: #1f1f1f;
+    background-color: #151515;
     font-family: "Share Tech Mono", monospace;
     font-weight: 400;
     font-style: normal;
@@ -50,4 +50,5 @@ body {
 
 #load_text {
     font-size: 1.25em;
+    text-shadow: 0 0 5px #dfdfdf, 0 0 10px #dfdfdf, 0 0 15px #dfdfdf;
 }
