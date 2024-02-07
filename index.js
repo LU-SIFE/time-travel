@@ -9,7 +9,7 @@ disableScroll();
 setTimeout(function() {change_text(0)}, 1000);
 setTimeout(function() {change_text(1)}, 3000);
 setTimeout(function() {change_text(2)}, 5000);
-setTimeout(function() {enableScroll()}, 6500);
+setTimeout(function() {enableScroll(); document.getElementById("body").style.overflowY = "scroll";}, 6500);
 
 
 
