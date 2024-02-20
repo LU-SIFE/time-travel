@@ -1,11 +1,21 @@
+@font-face {
+    font-family: Furore;
+    src: url("Furore/Furore.otf") format("opentype");
+}
+
 html, body {
     margin: 0;
     padding: 0;
-    background-color: #151515;
-    font-family: "Share Tech Mono", monospace;
+    background-color: #0E4749;
+    font-family: "Furore";
+    letter-spacing: .2rem;
     font-weight: 400;
     font-style: normal;
-    color: #dfdfdf;
+    color: #A4F9C8;
+    z-index: -2;
+    overflow-x: hidden;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
 }
 
 body {
@@ -13,13 +23,98 @@ body {
     flex-direction: column;
     min-height: 100vh;
     align-items: center;
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
-body::-webkit-scrollbar {
+html::-webkit-scrollbar {
     display: none;
 }
 
+section {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.border {
+    position: fixed;
+    left: 0.75em;
+    right: 0.75em;
+    top: 0.75em;
+    bottom: 0.75em;
+    border: 1px solid #A4F9C8;
+    border-radius: 1em;
+    z-index: 1000;
+    clip:auto;
+    pointer-events: none;
+}
+
+.top_hide, .bot_hide {
+    position: fixed;
+    height: 0.75em;
+    width: 100vw;
+    top:0;
+    left:0;
+    z-index: 1000;
+    background-color: #0E4749;
+}
+.bot_hide {bottom:0;}
+
 /*text-shadow: 0 0 5px #dfdfdf, 0 0 10px #dfdfdf, 0 0 15px #dfdfdf;*/
+
+.expandable {
+    box-sizing: border-box;
+    background-color: #0E4749;
+    position: relative;
+    font-size: 2em;
+    padding: 50px;
+    border: 1px solid #A4F9C8;
+    color: #A4F9C8;
+    font-family: "Furore";
+    letter-spacing: .2rem;
+    font-weight: 400;
+    font-style: normal;
+    border-radius: 1em;
+    transform-style: preserve-3d;
+    animation-fill-mode: forwards;
+    animation-name: shrink_move;
+    animation-duration: 0.25s;
+}
+
+.behind_expand {
+    box-sizing: border-box;
+    transform: translateZ(-10px);
+    position: absolute;
+    left:0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #A4F9C8;
+    border-radius: 1em;
+    animation-name: shrink;
+    animation-duration: 0.25s;
+    animation-fill-mode: forwards;
+}
+
+.expandable:hover {
+    background-color: #A4F9C8;
+    color: #0E4749;
+    animation-fill-mode: forwards;
+    animation-name: expand_move;
+    animation-duration: 0.25s;
+}
+
+.expandable:hover .behind_expand {
+    animation-fill-mode: forwards;
+    animation-name: expand;
+    animation-duration: 0.25s;
+
+}
+
+
+@keyframes expand_move {from {left:0;top:0;} to {left:10px;top:-10px;}}
+@keyframes shrink_move {from {left:10px;top:-10px;} to {left:0;top:0;}}
+@keyframes expand {from {left: 0; top: 0;} to {left: -20px; top: 20px;}}
+@keyframes shrink {from {left: -20px; top: 20px;} to {left: 0; top: 0;}}
