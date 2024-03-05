@@ -4,22 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="extras.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
-
 <body>
+	<div id="cursor"></div>
+	<div id="cursor2"></div>
+	<div id="cursor3"></div>
+    <div id="sat"></div>
+    <div id="sat2"></div>
 
-    <div class="border"></div>
-    <div class="top_hide"></div>
-    <div class="bot_hide"></div>
-    <section>  
-        <button class="expandable" onclick="begin()"><div class="behind_expand"></div>Fix the past?</button>
+    
+
+	<div id="scroll_nav">
+		<div class="scroll_bar"></div>
+		<div class="scroll_circle"></div>
+	</div>
+    
+    <div id="time"></div>
+    <!-- here's how to use the cursor crap -->
+    <!--<div onmouseover="ch(true)" onmouseout="ch(false)"></div>-->
+        <nav id="nav">
+            <a href="#" onmouseover="ch(true)" onmouseout="ch(false)">┗ Home</a>
+            <a href="#" onmouseover="ch(true)" onmouseout="ch(false)">┗ Resolve</a>
+            <a href="#" onmouseover="ch(true)" onmouseout="ch(false)">┗ About</a>
+            <a href="#" onmouseover="ch(true)" onmouseout="ch(false)">┗ FAQ</a>
+        </nav>
+    <section>
+        <span id="hero">Time Travel & Co.</span>
+        <div id="bar_expand"></div>
+        
+        <span id="bottom_text">Solving problems before they happen.</span>
     </section>
+
+    <section id="resolve">
+        <div>
+            <span>
+                Forget your keys?<br>Late for work?<br>Leave the stove on?<br><br>
+                Don't worry, we already fixed it.
+            </span>
+        </div>
+        <div>
+            <button onmouseover="ch(true)" onmouseout="ch(false)">Submit a time anomoly here</button>
+            <span><br>!! (read how it works below) !!</span>
+        </div>
+    </section>
+
+    <section>
+        Among us
+    </section>
+    
 </body>
 </html>
 
+
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js"></script>
+<script src="cursor.js"></script>
 <script src="index.js"></script>

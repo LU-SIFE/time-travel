@@ -1,0 +1,51 @@
+#cursor, #cursor2, #cursor3 {
+	border: 1px var(--col1-rgb) solid;
+	border-radius: 2.5em;
+	height: 2.5em;
+	width: 2.5em;
+	position: fixed;
+	top: -100px;
+	left: -100px;
+	z-index: 100;
+	transform: translate(-50%,-50%);
+	pointer-events: none;
+	animation-duration: 0.2s;
+}
+
+#cursor2, #cursor3 {
+	z-index: 99;
+	border: 1px var(--col1-rgb2) solid;
+    transform-origin: center;
+    border-radius: 0;
+	height: 0.75em;
+	width: 0.75em;
+    animation: spin 3s infinite linear;
+}
+
+#sat, #sat2 {
+    transform-origin: left;
+    word-wrap: none;
+	pointer-events: none;
+	position: fixed;
+	z-index: 98;
+    width:0;
+    border-bottom:1px solid var(--col1-rgb2);
+
+}
+
+.cursor_expand { animation-name: expand1; animation-fill-mode: forwards; }
+.cursor_shrink { animation-name: shrink1; animation-fill-mode: forwards; }
+
+@keyframes shrink1 {
+	from {background-color: var(--col1-rgb2); width: 4em; height: 4em; border: 1px var(--col1-rgb) solid;}
+	to {background-color: var(--col1-rgb3); width: 2.5em; height: 2.5em; border: 1px var(--col1-rgb) solid;}
+}
+@keyframes expand1 {
+	from {background-color: var(--col1-rgb3); width: 2.5em; height: 2.5em; border: none;}
+	to {background-color: var(--col1-rgb2); width: 4em; height: 4em; border: none;}
+}
+
+@keyframes spin {
+    from {transform: translate(-50%,-50%) rotate(0deg);}
+    to {transform: translate(-50%,-50%) rotate(360deg);}
+}

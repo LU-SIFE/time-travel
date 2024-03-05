@@ -2,20 +2,27 @@
     font-family: Furore;
     src: url("Furore/Furore.otf") format("opentype");
 }
+:root {
+	--col1: #c493ff;
+    --col1-rgb: rgb(196, 147, 255, 1);
+    --col1-rgb2: rgb(196, 147, 255, 0.5);
+    --col1-rgb3: rgb(196, 147, 255, 0);
+    --col2: #1f1f1f
+}
 
 html, body {
     margin: 0;
     padding: 0;
-    background-color: #0E4749;
+    background-color: var(--col2);
     font-family: "Furore";
     letter-spacing: .2rem;
     font-weight: 400;
     font-style: normal;
-    color: #A4F9C8;
-    z-index: -2;
+    color: var(--col1);
     overflow-x: hidden;
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
+    cursor:none;
 }
 
 body {
@@ -31,90 +38,141 @@ html::-webkit-scrollbar {
 }
 
 section {
-    height: 100vh;
+    min-height: 100vh;
     width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
-.border {
+
+nav {
     position: fixed;
-    left: 0.75em;
-    right: 0.75em;
-    top: 0.75em;
-    bottom: 0.75em;
-    border: 1px solid #A4F9C8;
-    border-radius: 1em;
-    z-index: 1000;
-    clip:auto;
-    pointer-events: none;
+    z-index: 96;
+    height: 80vh;
+    width: 10em;
+    left: 0;
+    border-right: 1px solid var(--col1);
+    top: 50%;
+    transform: translate(0, -50%);
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
 }
 
-.top_hide, .bot_hide {
+nav a {
+    text-decoration: none;
+    color: var(--col1);
+    cursor: none;
+    height: fit-content;
+    padding: 10px 15px 10px 15px;
+    transition: color 0.15s, background-color 0.15s;
+    margin-bottom: 10px;
+    border-bottom: 1px solid var(--col1);
+    border-right: 1px solid var(--col1);
+    white-space: nowrap;
+    border-top-left-radius: 0.5em;
+}
+
+nav a:hover {
+    background-color: var(--col1);
+    color: var(--col2);
+}
+
+#bar_expand {
+    width: 0;
+    height: 0;
+    border-bottom: 1px solid var(--col1);
+}
+
+#hero {
+    font-size: 3em;
+    padding: 15px;
+}
+
+#bottom_text {
+    font-size: 1em;
+    padding: 15px;
+}
+
+#time {
     position: fixed;
-    height: 0.75em;
-    width: 100vw;
-    top:0;
-    left:0;
-    z-index: 1000;
-    background-color: #0E4749;
+    left: 20px;
+    top: 20px;
 }
-.bot_hide {bottom:0;}
 
-/*text-shadow: 0 0 5px #dfdfdf, 0 0 10px #dfdfdf, 0 0 15px #dfdfdf;*/
 
-.expandable {
-    box-sizing: border-box;
-    background-color: #0E4749;
-    position: relative;
-    font-size: 2em;
-    padding: 50px;
-    border: 1px solid #A4F9C8;
-    color: #A4F9C8;
+#scroll_nav {
+	position: fixed;
+	width: 2em;
+	height: 20em;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	top: 50%;
+	right: 1em;
+	transform: translate(0, -50%);
+	z-index: 30;
+}
+
+.scroll_bar {
+	position: absolute;
+	border: 1px solid var(--col1);
+	width: 0;
+	height: 20em;
+	z-index: -100;
+}
+
+.scroll_circle {
+	border-radius: 2em;
+	position: absolute;
+	top: -0.5em;
+	width: 1em;
+	height: 1em;
+	border: 2px solid var(--col1);
+	background-color: var(--col2);
+}
+
+#resolve {
+    display: flex;
+    flex-direction: row;
+    min-height: 50vh;
+    height: 50vh;
+}
+
+#resolve div button {
+    background-color: transparent;
+    color: var(--col1);
+    border: 1px solid var(--col1);
     font-family: "Furore";
     letter-spacing: .2rem;
     font-weight: 400;
     font-style: normal;
-    border-radius: 1em;
-    transform-style: preserve-3d;
-    animation-fill-mode: forwards;
-    animation-name: shrink_move;
-    animation-duration: 0.25s;
+    padding: 15px;
+    font-size: 1.75em;
+    cursor: none;
 }
 
-.behind_expand {
-    box-sizing: border-box;
-    transform: translateZ(-10px);
-    position: absolute;
-    left:0;
-    top:0;
-    width: 100%;
-    height: 100%;
-    border: 1px solid #A4F9C8;
-    border-radius: 1em;
-    animation-name: shrink;
-    animation-duration: 0.25s;
-    animation-fill-mode: forwards;
+#resolve div button:hover {
+    background-color: var(--col1-rgb2);
+    border: 1px solid var(--col1-rgb2);
 }
 
-.expandable:hover {
-    background-color: #A4F9C8;
-    color: #0E4749;
-    animation-fill-mode: forwards;
-    animation-name: expand_move;
-    animation-duration: 0.25s;
+#resolve div span {
+    font-size: 1.5em;
+    line-height: 1.65em;
 }
 
-.expandable:hover .behind_expand {
-    animation-fill-mode: forwards;
-    animation-name: expand;
-    animation-duration: 0.25s;
-
+#resolve div {
+    height: 50vh;
+    max-width: 35vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
 }
-
-
-@keyframes expand_move {from {left:0;top:0;} to {left:10px;top:-10px;}}
-@keyframes shrink_move {from {left:10px;top:-10px;} to {left:0;top:0;}}
-@keyframes expand {from {left: 0; top: 0;} to {left: -20px; top: 20px;}}
-@keyframes shrink {from {left: -20px; top: 20px;} to {left: 0; top: 0;}}
