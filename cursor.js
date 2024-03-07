@@ -21,11 +21,27 @@ document.onmousemove = function(event) {
  //changes cursor state onhover
  function ch(state) {
     if (state === true) {
-      document.getElementById("cursor").classList.remove("cursor_shrink");
-      document.getElementById("cursor").classList.add("cursor_expand");
+        document.getElementById("cursor").classList.remove("cursor_shrink");
+        document.getElementById("cursor").classList.add("cursor_expand");
+
+        anime({
+            targets: '#cursor2',
+            width: "4.5em",
+            height: "4.5em",
+            duration: 200
+        });
+
     } else {
-      document.getElementById("cursor").classList.remove("cursor_expand");
-      document.getElementById("cursor").classList.add("cursor_shrink");
+        document.getElementById("cursor").classList.remove("cursor_expand");
+        document.getElementById("cursor").classList.add("cursor_shrink");
+
+
+        anime({
+            targets: '#cursor2',
+            width: "0.75em",
+            height: "0.75em",
+            duration: 200
+        });
     }
   }
 
@@ -38,6 +54,15 @@ function calculate() {
     
     var x3 = parseInt(document.getElementById('cursor3').style.left)
     var y3 = parseInt(document.getElementById('cursor3').style.top)
+    
+    var x4 = parseInt(document.getElementById("point1").offsetLeft);
+    var y4 = parseInt(document.getElementById("point1").offsetTop);
+
+    var x5 = parseInt(document.getElementById("point2").offsetLeft);
+    var y5 = parseInt(document.getElementById("point2").offsetTop);
+    
+    var x6 = parseInt(document.getElementById("point3").offsetLeft);
+    var y6 = parseInt(document.getElementById("point3").offsetTop);
     
     if (x1 < x2) {
         document.getElementById("sat").style.left = x1 + "px";
@@ -55,9 +80,8 @@ function calculate() {
 
 //
 //
-
-        document.getElementById("sat2").style.left = x2 + "px";
-        document.getElementById("sat2").style.top = y2 + "px";
+    document.getElementById("sat2").style.left = x2 + "px";
+    document.getElementById("sat2").style.top = y2 + "px";
  
     
     var width = getDistance(x2, y2, x3, y3);
@@ -65,6 +89,33 @@ function calculate() {
     
     document.getElementById("sat2").style.rotate = angle +"deg";
     document.getElementById("sat2").style.width = width + "px";
+
+    var width = getDistance(x4,y4,x5,y5);
+    var angle = angleCalc(x4,y4,x5,y5)
+
+    document.getElementById("pline1").style.left = x4 + "px";
+    document.getElementById("pline1").style.top = y4 + "px";
+
+    document.getElementById("pline1").style.rotate = angle +"deg";
+    document.getElementById("pline1").style.width = width + "px";
+
+    var width = getDistance(x5,y5,x6,y6);
+    var angle = angleCalc(x5,y5,x6,y6);
+
+    document.getElementById("pline2").style.left = x5 + "px";
+    document.getElementById("pline2").style.top = y5 + "px";
+
+    document.getElementById("pline2").style.rotate = angle +"deg";
+    document.getElementById("pline2").style.width = width + "px";
+
+    var width = getDistance(x6,y6,x4,y4);
+    var angle = angleCalc(x6,y6,x4,y4);
+
+    document.getElementById("pline3").style.left = x6 + "px";
+    document.getElementById("pline3").style.top = y6 + "px";
+
+    document.getElementById("pline3").style.rotate = angle +"deg";
+    document.getElementById("pline3").style.width = width + "px";
 }
 
 function getDistance(x1, y1, x2, y2) {
@@ -90,4 +141,10 @@ function parallax() {
     document.getElementById('time').style.translate = -(mouse.x/100) + "px " + -(mouse.y/35) + "px";
     document.getElementById('scroll_nav').style.translate = -(mouse.x/100) + "px " + -(mouse.y/35) + "px";
     document.getElementById('resolve').style.translate = -(mouse.x/100) + "px " + -(mouse.y/35) + "px";
+    document.getElementById('point1').style.translate = -(mouse.x/100) + "px " + -(mouse.y/35) + "px";
+    document.getElementById('point2').style.translate = -(mouse.x/100) + "px " + -(mouse.y/35) + "px";
+    document.getElementById('point3').style.translate = -(mouse.x/100) + "px " + -(mouse.y/35) + "px";
+    document.getElementById('pline1').style.translate = -(mouse.x/100) + "px " + -(mouse.y/35) + "px";
+    document.getElementById('pline2').style.translate = -(mouse.x/100) + "px " + -(mouse.y/35) + "px";
+    document.getElementById('pline3').style.translate = -(mouse.x/100) + "px " + -(mouse.y/35) + "px";
 }

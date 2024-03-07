@@ -33,8 +33,31 @@
 
 }
 
+#point1, #point2, #point3 {
+    position: fixed;
+    height: 0.75em;
+    width: 0.75em;
+    border: 1px solid var(--col1-rgb);
+	transform: translate(-50%,-50%);
+    background-color: #1f1f1f;
+    z-index: 50;
+}
+
+#point1 {top: 2.325em; right:4.675em;}
+#point2 {top: 2.325em; right: 1.675em;}
+#point3 {top: 5.325em; right: 1.675em;}
+
+#pline1, #pline2, #pline3 {
+    transform-origin: left;
+    position: fixed;
+    height: 0;
+    border-bottom: 1px solid var(--col1-rgb);
+    z-index: 49;
+}
+
 .cursor_expand { animation-name: expand1; animation-fill-mode: forwards; }
 .cursor_shrink { animation-name: shrink1; animation-fill-mode: forwards; }
+
 
 @keyframes shrink1 {
 	from {background-color: var(--col1-rgb2); width: 4em; height: 4em; border: 1px var(--col1-rgb) solid;}
