@@ -3,63 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="extras.css">
+
+    <!-- Google Font Stuff -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>Time Travel & Co.</title>
 </head>
 <body>
+    <!-- Cursor Elements -->
 	<div id="cursor"></div>
 	<div id="cursor2"></div>
 	<div id="cursor3"></div>
     <div id="sat"></div>
     <div id="sat2"></div>
+    <!-- ---------------- -->
 
-    
-
+    <!-- Scroll Bar -->
 	<div id="scroll_nav">
 		<div class="scroll_bar"></div>
 		<div class="scroll_circle"></div>
 	</div>
-
+    
+    <!-- Corner Animation -->
     <div id="point1"></div>
     <div id="point2"></div>
     <div id="point3"></div>
     <div id="pline1"></div>
     <div id="pline2"></div>
     <div id="pline3"></div>
-    
+    <!-- ---------------- -->
+
+    <!-- Corner Time -->
     <div id="time"></div>
-    <!-- here's how to use the cursor crap -->
-    <!--<div onmouseover="ch(true)" onmouseout="ch(false)"></div>-->
-        <nav id="nav">
-            <a href="#" onmouseover="ch(true)" onmouseout="ch(false)">┗ Home</a>
-            <a href="#" onmouseover="ch(true)" onmouseout="ch(false)">┗ Resolve</a>
-            <a href="#" onmouseover="ch(true)" onmouseout="ch(false)">┗ About</a>
-            <a href="#" onmouseover="ch(true)" onmouseout="ch(false)">┗ FAQ</a>
-        </nav>
+    
+    <!-- Nav Bar -->
+    <nav id="nav">
+        <a href="#" onmouseover="ch(true)" onmouseout="ch(false)">┗ Home</a>
+        <a href="#" onmouseover="ch(true)" onmouseout="ch(false)">┗ Resolve</a>
+        <a href="#" onmouseover="ch(true)" onmouseout="ch(false)">┗ About</a>
+        <a href="#" onmouseover="ch(true)" onmouseout="ch(false)">┗ FAQ</a>
+    </nav>
+
+<!-- Section 1 -->
     <section>
         <span id="hero">Time Travel & Co.</span>
         <div id="bar_expand"></div>
         
         <span id="bottom_text">Solving problems before they happen.</span>
     </section>
-
+<!-- ----------- -->
+<!--  Section 2  -->
     <section id="resolve">
+        <!-- Left Content -->
         <div>
-            <span>
-                Forget your keys?<br>Late for work?<br>Leave the stove on?<br><br>
-                Don't worry, we already fixed it.
-            </span>
+            <span>Forget your keys?<br>Late for work?<br>Leave the stove on?<br><br>Don't worry, we already fixed it.</span>
         </div>
+        <!-- Right Content -->
         <div>
             <button onmouseover="ch(true)" onmouseout="ch(false)">Submit a time anomoly here</button>
             <span><br>!! (read how it works below) !!</span>
         </div>
     </section>
-
+<!-- -------- -->
+<!-- Section 3-->
     <section>
         Among us
     </section>
@@ -67,8 +78,9 @@
 </body>
 </html>
 
-
-
+<!-- Javascript lol -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js"></script>
+<script src="utils.js"></script>
 <script src="cursor.js"></script>
 <script src="index.js"></script>
+<script src="animate.js"></script>
