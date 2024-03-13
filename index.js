@@ -1,6 +1,6 @@
 window.onload = () => {
-    setInterval(particles,0);
-    setInterval(parallax_items,0);
+    setInterval(particles,8);
+    setInterval(parallax_items,8);
     animate();
 
     //initial call so it's not blank for a second
