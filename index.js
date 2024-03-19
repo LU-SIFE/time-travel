@@ -31,3 +31,14 @@ function parallax_items() {
     parallax('time');
     parallax('nav');
 }
+
+function form_appear() {
+    anime({
+        targets: '#form',
+        translateX: ["100vw", '0vw'],
+        easing: 'easeOutExpo',
+        duration: 750,
+        delay: 0
+
+    })
+}

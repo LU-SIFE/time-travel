@@ -20,7 +20,7 @@ const scrollPercent = () => {
     const docST = document.documentElement.scrollTop;
     const docSH = document.documentElement.scrollHeight;
     const docCH = document.documentElement.clientHeight;
-    return (docST + bodyST) / (docSH - docCH) * 100
+    return (docST + bodyST) / (docSH - docCH) * 100;
 }
 
   //refreshes the time

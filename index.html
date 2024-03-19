@@ -46,7 +46,7 @@
         <a href="#" onmouseover="ch(true)" onmouseout="ch(false)">┗ Home</a>
         <a href="#" onmouseover="ch(true)" onmouseout="ch(false)">┗ Resolve</a>
         <a href="#" onmouseover="ch(true)" onmouseout="ch(false)">┗ About</a>
-        <a href="#" onmouseover="ch(true)" onmouseout="ch(false)">┗ FAQ</a>
+        <a href="#" onmouseover="ch(true)" onmouseout="ch(false)">┗ Q&A</a>
     </nav>
 
 <!-- Section 1 -->
@@ -59,13 +59,22 @@
 <!-- ----------- -->
 <!--  Section 2  -->
     <section id="resolve">
+        <!-- Fake Form -->
+        <div id="form">
+            <button id="back">X</button>
+            <div>
+                <span>Date of anomoly:</span>
+                <input type="date" name="Time" id="date" onmouseover="ch(true)" onmouseout="ch(false)" onclick="form_appear()">
+            </div>
+        </div>
+
         <!-- Left Content -->
-        <div>
+        <div class="seperator">
             <span>Forget your keys?<br>Late for work?<br>Leave the stove on?<br><br>Don't worry, we already fixed it.</span>
         </div>
         <!-- Right Content -->
-        <div>
-            <button onmouseover="ch(true)" onmouseout="ch(false)">Submit a time anomoly here</button>
+        <div class="seperator">
+            <button onmouseover="ch(true)" onmouseout="ch(false)" onclick="form_appear()">Submit a time anomoly here</button>
             <span><br>!! (read how it works below) !!</span>
         </div>
     </section>
