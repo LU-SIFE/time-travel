@@ -35,7 +35,18 @@ function parallax_items() {
 function form_appear() {
     anime({
         targets: '#form',
-        translateX: ["100vw", '0vw'],
+        translateX: ['100vw', '0vw'],
+        easing: 'easeOutExpo',
+        duration: 750,
+        delay: 0
+
+    })
+}
+
+function form_disappear() {
+    anime({
+        targets: '#form',
+        translateX: ['0vw', '100vw'],
         easing: 'easeOutExpo',
         duration: 750,
         delay: 0

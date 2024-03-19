@@ -183,15 +183,16 @@ nav a:hover {
     background-color: var(--col2);
     border: 1px solid var(--col1);
     border-radius: 1em;
-    width: 80%;
+    width: 70%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     transform: translateX(100vw);
 }
 
-#date {
+#date, #time_input {
     background-color: #1f1f1f;
     color: var(--col1);
     border: 1px solid var(--col1);
@@ -227,4 +228,8 @@ nav a:hover {
     padding: 0;
     left: 15px;
     top: 15px;
+}
+
+#time_input {
+    width: 3em;
 }

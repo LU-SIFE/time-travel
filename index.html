@@ -61,10 +61,14 @@
     <section id="resolve">
         <!-- Fake Form -->
         <div id="form">
-            <button id="back">X</button>
+            <button id="back" onmouseover="ch(true)" onmouseout="ch(false)" onclick="form_disappear()">X</button>
             <div>
                 <span>Date of anomoly:</span>
-                <input type="date" name="Time" id="date" onmouseover="ch(true)" onmouseout="ch(false)" onclick="form_appear()">
+                <input type="date"id="date" onmouseover="ch(true)" onmouseout="ch(false)">
+            </div><br><br>
+            <div>
+                <span>Time:</span>
+                <input type="text" id="time_input" placeholder="17:34">
             </div>
         </div>
 
