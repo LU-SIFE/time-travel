@@ -27,6 +27,7 @@ function parallax_items() {
     parallax('pline1');
     parallax('pline2');
     parallax('pline3');
+    parallax('sect2');
     parallax('hero');
     parallax('time');
     parallax('nav');
