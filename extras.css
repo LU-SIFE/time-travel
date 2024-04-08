@@ -30,7 +30,6 @@
 	z-index: 98;
     width:0;
     border-bottom:1px solid var(--col1-rgb2);
-
 }
 
 #point1, #point2, #point3 {
@@ -43,7 +42,7 @@
     z-index: 50;
 }
 
-#point1 {top: 2.325em; right:4.675em;}
+#point1 {top: 2.325em; right: 4.675em;}
 #point2 {top: 2.325em; right: 1.675em;}
 #point3 {top: 5.325em; right: 1.675em;}
 
