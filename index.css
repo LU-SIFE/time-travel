@@ -280,14 +280,16 @@ nav a:hover {
 #p4 {left: 25%; top: 30%; background-color: lightpink;}
 #p5 {left: 30%; top: 50%; background-color: lightgreen;}
 #p6 {left: 35%; bottom: 90px; background-color: aquamarine;}
-#p7 {left: 35%; top: 90px; background-color: navajowhite;}
+#p7 {left: 50%; top: 90px; background-color: navajowhite;}
 #p8 {left: 30%; top: 30px; background-color: plum;}
 
-#p9 {right: 30%; top: 50%; background-color: powderblue;}
+#p9 {right: 30%; top: 50%; background-color: khaki;}
 #p10 {right: 20%; bottom: 20%; background-color: thistle;}
 #p11 {right: 10%; bottom: 15%; background-color: peachpuff;}
 
-#l1, #l2, #l3, #l4, #l5, #l6, #l7 {
+#p12 {right: 20%; bottom: 35%; background-color: lemonchiffon;}
+
+#l1, #l2, #l3, #l4, #l5, #l6, #l7, #l8, #l9 {
     transform-origin: left;
     position: absolute;
     border-bottom: 2px solid var(--col1);

@@ -15,6 +15,8 @@ window.onload = () => {
     calculate('p4', 'p8', 'l5');
     calculate('p9', 'p10', 'l6');
     calculate('p10', 'p11', 'l7');
+    calculate('p7', 'p9', 'l8');
+    calculate('p9', 'p12', 'l9');
 }
 
 function particles() {
@@ -71,11 +73,12 @@ var info_array = [
     'Split Testing<br>',
     'Main Split Testing<br>',
     '6',
-    '7',
+    'Merge Preperations',
     '8',
-    '9',
+    'Merge Testing',
     '10',
     '11',
+    '12',
 ];
 
 function info(index) {
