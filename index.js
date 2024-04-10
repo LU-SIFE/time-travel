@@ -6,6 +6,13 @@ window.onload = () => {
     //initial call so it's not blank for a second
     refreshTime();
     setInterval(refreshTime, 1000);
+
+    
+    calculate('p1', 'p2', 'l1');
+    calculate('p3', 'p4', 'l2');
+    calculate('p5', 'p6', 'l3');
+    calculate('p4', 'p7', 'l4');
+    calculate('p4', 'p8', 'l5');
 }
 
 function particles() {
@@ -53,4 +60,21 @@ function form_disappear() {
         delay: 0
 
     })
+}
+
+var info_array = [
+    'Beginning of Time<br>',
+    'End of Time<br>',
+    'Initial Break<br>',
+    'Split Testing<br>',
+    'Main Split Testing<br>',
+    '6',
+    '7',
+    '8',
+    '9',
+    '10',
+];
+
+function info(index) {
+    document.getElementById('info_container').innerHTML = info_array[index-1];
 }

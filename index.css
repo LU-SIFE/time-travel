@@ -54,7 +54,7 @@ nav {
     z-index: 96;
     height: 80vh;
     width: 10em;
-    left: 0;
+    left: 20px;
     border-right: 1px solid var(--col1);
     top: 50%;
     transform: translate(0, -50%);
@@ -234,3 +234,63 @@ nav a:hover {
 #time_input {
     width: 3em;
 }
+
+#sect2 {
+    justify-content: left;
+}
+
+#tree {
+    position: relative;
+    border: 1px solid var(--col1);
+    border-radius: 1em;
+    width: 70%;
+    height: 50vh;
+    display: flex;
+    padding: 10px;
+}
+
+#info_container {
+    position: absolute;
+    width: 30%;
+    height: 35%;
+    right: 0;
+    top: 0;
+    border: 1px solid var(--col1);
+    margin: 15px;
+    padding: 10px;
+    border-radius: 1em;
+    text-align: center;
+}
+
+.point {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    margin: 0;
+    padding: 0;
+    background-color: var(--col1);
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    z-index: 100;
+}
+
+#p1 {left: 20px; top: 50%; background-color: lightgreen;}
+#p2 {right: 0px; top: 50%; background-color: lightcoral;}
+
+#p3 {left: 20%; top: 50%; background-color: lightgoldenrodyellow;}
+#p4 {left: 25%; top: 30%; background-color: lightpink;}
+
+#p5 {left: 30%; top: 50%; background-color: lightgreen;}
+#p6 {left: 35%; bottom: 90px; background-color: aquamarine;}
+
+#p7 {left: 35%; top: 90px; background-color: navajowhite;}
+
+#p8 {left: 30%; top: 30px; background-color: plum;}
+
+#l1, #l2, #l3, #l4, #l5 {
+    transform-origin: left;
+    position: absolute;
+    border-bottom: 2px solid var(--col1);
+}
+
+#p1:hover, #p2:hover, #p3:hover, #p4:hover, #p5:hover, #p6:hover, #p7:hover {background-color: ivory;}
