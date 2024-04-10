@@ -276,21 +276,21 @@ nav a:hover {
 
 #p1 {left: 20px; top: 50%; background-color: lightgreen;}
 #p2 {right: 0px; top: 50%; background-color: lightcoral;}
-
 #p3 {left: 20%; top: 50%; background-color: lightgoldenrodyellow;}
 #p4 {left: 25%; top: 30%; background-color: lightpink;}
-
 #p5 {left: 30%; top: 50%; background-color: lightgreen;}
 #p6 {left: 35%; bottom: 90px; background-color: aquamarine;}
-
 #p7 {left: 35%; top: 90px; background-color: navajowhite;}
-
 #p8 {left: 30%; top: 30px; background-color: plum;}
 
-#l1, #l2, #l3, #l4, #l5 {
+#p9 {right: 30%; top: 50%; background-color: powderblue;}
+#p10 {right: 20%; bottom: 20%; background-color: thistle;}
+#p11 {right: 10%; bottom: 15%; background-color: peachpuff;}
+
+#l1, #l2, #l3, #l4, #l5, #l6, #l7 {
     transform-origin: left;
     position: absolute;
     border-bottom: 2px solid var(--col1);
 }
 
-#p1:hover, #p2:hover, #p3:hover, #p4:hover, #p5:hover, #p6:hover, #p7:hover {background-color: ivory;}
+#p1:hover, #p2:hover, #p3:hover, #p4:hover, #p5:hover, #p6:hover, #p7:hover, #p8:hover {background-color: ivory;}

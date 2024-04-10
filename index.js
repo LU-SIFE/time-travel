@@ -13,6 +13,8 @@ window.onload = () => {
     calculate('p5', 'p6', 'l3');
     calculate('p4', 'p7', 'l4');
     calculate('p4', 'p8', 'l5');
+    calculate('p9', 'p10', 'l6');
+    calculate('p10', 'p11', 'l7');
 }
 
 function particles() {
@@ -73,6 +75,7 @@ var info_array = [
     '8',
     '9',
     '10',
+    '11',
 ];
 
 function info(index) {
