@@ -69,16 +69,16 @@ function form_disappear() {
 var info_array = [
     'Beginning of Time<br>',
     'End of Time<br>',
-    'Initial Break<br>',
-    'Split Testing<br>',
-    'Main Split Testing<br>',
-    '6',
-    'Merge Preperations',
-    '8',
-    'Merge Testing',
-    '10',
-    '11',
-    '12',
+    'Quantum-flux fuel was discovered The Founder, Ignatius Thistlethwaite<br>',
+    'Ignatius tested the first Time Machine<br>',
+    'Second Branch attempted.<br> Mission successful.',
+    'Second branch completed, returned to main timeline<br>',
+    'The Founder learned from previous mistakes.<br>Timeline continued without major incident<br>',
+    'Accidental annihilation of all life',
+    'First timeline successfuly merged back into the timeline<br>',
+    'Third merge attempt.<br> Attempt successful<br>Timeline continued.<br>',
+    'Disease from the future brought to the past.<br>Timeline reset.<br>',
+    'Second merge attempt started<br> Ignatius Thistlethwaite was lost in this attempt. <br>Timeline reset.<br>',
 ];
 
 function info(index) {
