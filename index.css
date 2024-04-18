@@ -254,6 +254,7 @@ nav a:hover {
 #sect2 {
     justify-content: left;
     margin-top: 5em;
+    min-height: 50vh;
 }
 
 #tree {
@@ -316,6 +317,40 @@ input[type="radio"]:checked {
 
 hr {
     border-color: var(--col1);
+    width: 100%;
+}
+
+#sect3 {
+    min-height: 70vh;
+    width: 70%;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 5em;
+}
+
+.sect3_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 70%;
+}
+
+.left_sect, .right_sect {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.left_sect {
+    border-right: 1px solid var(--col1);
+    padding-right: 15px;
+}
+
+.right_sect {
+    border-left: 1px solid var(--col1);
+    padding-left: 15px;
+
 }
 
 #p1 {left: 20px; top: 50%; background-color: lightgreen;}

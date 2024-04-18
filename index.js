@@ -42,6 +42,7 @@ function parallax_items() {
     parallax('hero');
     parallax('time');
     parallax('nav');
+    parallax('sect3')
 }
 
 function form_appear() {
@@ -67,7 +68,7 @@ function form_disappear() {
 }
 
 var info_array = [
-    '<b>Beginning of Time</b><br>',
+    '<b>Beginning of Time</b><hr><br>Witness the birth of an incredible experience!',
 
     '<b>End of Time</b><hr><br>A popular place, witness the final moments before the destruction of everything, safely through a time loop, and enjoy a dinner at the resteraunt at the end of time™',
 
