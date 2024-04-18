@@ -158,11 +158,13 @@ nav a:hover {
     padding: 15px;
     font-size: 1.75em;
     cursor: none;
+    transition: border-radius 0.26s;
 }
 
 #resolve div button:hover {
     background-color: var(--col1-rgb2);
     border: 1px solid var(--col1-rgb2);
+    border-radius: 2em;
 }
 
 #resolve div span {
@@ -212,7 +214,7 @@ nav a:hover {
     background-color: var(--col1-rgb2);
 }
 
-#form div {
+.time_select {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -249,6 +251,29 @@ nav a:hover {
     display: flex;
     padding: 10px 15px 10px 15px;
 }
+
+.checkboxes {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+}
+
+input[type="radio"] {
+    appearance: none;
+    width: 3em;
+    height: 3em;
+    border-radius: 3em;
+    border: 2px solid var(--col1);
+    background-color: var(--col1-rgb3);
+    accent-color: var(--col1-rgb2);
+    cursor: none;
+  }
+
+input[type="radio"]:checked {
+    background-color: var(--col1-rgb2);
+    padding: 4px;
+  }
 
 #info_container {
     position: absolute;

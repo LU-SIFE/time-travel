@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="icons/favicon.ico">
 
     <!-- CSS -->
     <link rel="stylesheet" href="index.css">
@@ -94,23 +96,26 @@
         <!-- Fake Form -->
         <div id="form">
             <button id="back" onmouseover="ch(true)" onmouseout="ch(false)" onclick="form_disappear()"><img src="icons/x.svg"></button>
-            <div>
-                <span>Date of anomoly:</span>
+            <div class="time_select">
+                <span>Date of Time Trip:</span>
                 <input type="date"id="date" onmouseover="ch(true)" onmouseout="ch(false)">
             </div><br><br>
             <div>
-                <span>Time:</span>
-                <input type="text" id="time_input" placeholder="17:34">
+                <span>BCE / CE?</span>
+                <div class="checkboxes">
+                    <input type="radio" name="era" onmouseover="ch(true)" onmouseout="ch(false)">
+                    <input type="radio" name="era" onmouseover="ch(true)" onmouseout="ch(false)">
+                </div>
             </div>
         </div>
 
         <!-- Left Content -->
         <div class="seperator">
-            <span>Forget your keys?<br>Late for work?<br>Leave the stove on?<br><br>Don't worry, we already fixed it.</span>
+            <span>Want to see 16th Century Japan?<br>Help Build the Pyramids?</span>
         </div>
         <!-- Right Content -->
         <div class="seperator">
-            <button onmouseover="ch(true)" onmouseout="ch(false)" onclick="form_appear()">Submit a time anomoly here</button>
+            <button onmouseover="ch(true)" onmouseout="ch(false)" onclick="form_appear()">Schedule a TIme Trip Here</button>
             <span><br>!! (read how it works below) !!</span>
         </div>
     </section>
