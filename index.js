@@ -69,9 +69,9 @@ function form_disappear() {
 var info_array = [
     'Beginning of Time<br>',
     'End of Time<br>',
-    'Quantum-flux fuel was discovered The Founder, Ignatius Thistlethwaite<br>',
+    '<b>Signing of the Magna Carta</b><hr><br>Travelers often visit this time to witness the signing of one of history\'s most important documents.',
     'Ignatius tested the first Time Machine<br>',
-    'Second Branch attempted.<br> Mission successful.',
+    '<b>Building of the pyramids</b><hr><br>The pyramids weren\'t built by aliens, they were built by time travelers who traveled back to help with construction.<br><br>Help out today!',
     'Second branch completed, returned to main timeline<br>',
     'The Founder learned from previous mistakes.<br>Timeline continued without major incident<br>',
     'Accidental annihilation of all life',

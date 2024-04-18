@@ -182,6 +182,18 @@ nav a:hover {
     padding: 50px;
 }
 
+
+.arrow {
+    height: 2em;
+    width: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    left: 15px;
+    top: 15px;
+}
+
 #form {
     position: absolute;
     background-color: var(--col2);
@@ -194,6 +206,7 @@ nav a:hover {
     align-items: center;
     flex-direction: column;
     transform: translateX(100vw);
+    padding: 10px 15px 10px 15px;
 }
 
 #date, #time_input {
@@ -240,6 +253,7 @@ nav a:hover {
 
 #sect2 {
     justify-content: left;
+    margin-top: 5em;
 }
 
 #tree {
@@ -290,22 +304,27 @@ input[type="radio"]:checked {
 
 .point {
     position: absolute;
-    height: 20px;
-    width: 20px;
+    height: 25px;
+    width: 25px;
     margin: 0;
     padding: 0;
     background-color: var(--col1);
     transform: translate(-50%, -50%);
-    border-radius: 20px;
+    border-radius: 25px;
     z-index: 100;
+}
+
+hr {
+    border-color: var(--col1);
 }
 
 #p1 {left: 20px; top: 50%; background-color: lightgreen;}
 #p2 {right: 0px; top: 50%; background-color: lightcoral;}
 #p3 {left: 20%; top: 50%; background-color: lightgoldenrodyellow;}
 #p4 {left: 25%; top: 30%; background-color: lightpink;}
-#p5 {left: 30%; top: 50%; background-color: lightgreen;}
-#p6 {left: 35%; bottom: 90px; background-color: aquamarine;}
+
+#p5 {left: 15%; top: 50%; background-color: lightgreen;}
+#p6 {left: 20%; bottom: 90px; background-color: aquamarine;}
 #p7 {left: 50%; top: 90px; background-color: navajowhite;}
 #p8 {left: 30%; top: 30px; background-color: plum;}
 
