@@ -87,7 +87,7 @@ var info_array = [
 
     '<b>Intergalactic Peace</b><hr><br>With the signing of the \'spatium pacis\', Intergalactic Peace was established. A safer time to travel the stars has never been known.',
 
-    'Disease from the future brought to the past.<br>Timeline reset.<br>',
+    '<b>Total Galactic War</b><hr><br>After several intergalatic factions broke away from the alliance, total galactic war ensued. if you would like to be a space marine, this timeline is for you!',
 
     '<b>Nuclear Fallout</b><hr><br>After a country broke the treaty, a nuclear fallout occured. If you would like to live in a post-apocalyptic wasteland, this timeline is for you!',
 ];
