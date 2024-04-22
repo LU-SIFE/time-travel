@@ -36,7 +36,7 @@
 > This page should contain a form where users can submit a request to travel to a point in time. the form doesnt have to be functional.
 
 ## timeline of events:
-
+>This section should show popular "vacation spots" for clients throughout time. Diagram?
 
 ## Limitations:
 > We didn't have much time with this website, so instead of focusing on both content and features, we put almost all of our focus on the more technical side of the website, like the cursor and animations. we made an entire javascript function to handle the placement of lines between moving objects, which we could have otherwise spent on the content of the website. We'll be honest when we say content is lacking, but i feel like we make up for it when it comes to what I call 'useless but cool' elements of our website. I guess this is more of a technical demonstration. I feel like the beauty of this website lies within the technical aspects instead of it's content and layout.
