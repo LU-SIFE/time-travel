@@ -11,6 +11,7 @@
 > The animation in the corner is basically useless, but it makes it feel like _something_ is going on in the background. the future is supposed to seem busy.
 >
 > The future is also supposed to seem minimalistic in design. There shouldn't be any clutter that is reminiscient of the early stages of the internet. Instead, Time Travel & Co. should reflect the visions people have of the future in it's design.
+> Simple styling, but not bland.
 
 ### Colorscheme:
 > Foreground: light purple (#C493FF)
@@ -33,7 +34,7 @@
 > this page shouldn't have much other than a nav bar and a main logo, maybe with some animations.
 
 ## Schedule / booking:
-> This page should contain a form where users can submit a request to travel to a point in time. the form doesnt have to be functional.
+> This page should contain a form where users can submit a request to travel to a point in time. the form doesnt have to be functional, it's just for show. 
 
 ## timeline of events:
 >This section should show popular "vacation spots" for clients throughout time. Diagram?
